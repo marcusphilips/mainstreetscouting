@@ -1,14 +1,17 @@
 package com.redtiesrobotics.scoutingapp.scoutingapp;
 
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    /*public static void main( String[] args )
     {
-    	SQLWorkPlz dao = new SQLWorkPlz();
+    	RedTieMongo dao = new RedTieMongo();
         try {
 			dao.readDataBase();
 		} catch (Exception e) {
@@ -16,4 +19,5 @@ public class App
 			e.printStackTrace();
 		}
     }
+	*/
 }

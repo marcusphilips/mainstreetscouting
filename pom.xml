@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		  <maven.compiler.source>1.8</maven.compiler.source>
+		  <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -33,8 +35,8 @@
     	<artifactId>json</artifactId>
     	<version>20171018</version>
 	</dependency>
- 
-  
+
+
   </dependencies>
   <build>
 		<finalName>ScoutingApp</finalName>
@@ -52,12 +54,20 @@
 				  <archive>
 					<manifest>
 						<!-- Jar file entry point -->
-						<mainClass>com.redtiesrobotics.scoutingapp.scoutingapp.App</mainClass>
+						<mainClass>C:\Users\valor\Documents\GitHub\mainstreetscouting\src\main\java\com\redtierobotics\scoutingapp\gui\Main.java</mainClass>
 					</manifest>
 				  </archive>
 				</configuration>
 			</plugin>
 
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<fork>true</fork>
+					<executable>C:\Program Files\Java\jdk-9.0.1\bin\javac.exe</executable>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
