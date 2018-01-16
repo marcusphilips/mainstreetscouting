@@ -39,35 +39,35 @@
 
   </dependencies>
   <build>
-		<finalName>ScoutingApp</finalName>
-		<plugins>
+    <finalName>ScoutingApp</finalName>
+    <plugins>
 
-			<!-- Make this jar executable -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-				  <!-- DO NOT include log4j.properties file in your Jar -->
-				  <excludes>
-					<exclude>**/log4j.properties</exclude>
-				  </excludes>
-				  <archive>
-					<manifest>
-						<!-- Jar file entry point -->
-						<mainClass>C:\Users\valor\Documents\GitHub\mainstreetscouting\src\main\java\com\redtierobotics\scoutingapp\gui\Main.java</mainClass>
-					</manifest>
-				  </archive>
-				</configuration>
-			</plugin>
+        <!-- Make this jar executable -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <!-- DO NOT include log4j.properties file in your Jar -->
+                <excludes>
+                    <exclude>**/log4j.properties</exclude>
+                </excludes>
+                <archive>
+                    <manifest>
+                        <!-- Jar file entry point -->
+                        <mainClass>C:\Users\valor\Documents\GitHub\mainstreetscouting\src\main\java\com\redtierobotics\scoutingapp\gui\Main.java</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
 
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<fork>true</fork>
-					<executable>C:\Program Files\Java\jdk-9.0.1\bin\javac.exe</executable>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files\Java\jdk-9.0.1\bin\javac.exe</executable>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>

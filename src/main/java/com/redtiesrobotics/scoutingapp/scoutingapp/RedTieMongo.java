@@ -26,4 +26,24 @@ public class RedTieMongo {
     public void readDataBase(){
 
     }
+
+    public MongoClient getMongoC() {
+        return mongoC;
+    }
+
+    public MongoDatabase getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(String db) {
+        this.database  = mongoC.getDatabase(db);
+    }
+
+    public MongoCollection getCollection() {
+        return collection;
+    }
+
+    public void setCollection(String c) {
+        this.collection = database.getCollection(c);
+    }
 }
